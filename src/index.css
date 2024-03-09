@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("https://unsplash.com/photos/grass-field-IQVFVH0ajag") no-repeat;
+  background: url("./frontend/assets/background.jpg") no-repeat;
   /* background-position: center;
   background-size: cover;
   background-attachment: fixed; */
