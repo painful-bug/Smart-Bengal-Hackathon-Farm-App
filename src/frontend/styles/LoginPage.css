@@ -1,0 +1,111 @@
+.login-page{
+    background-color: #fff;
+    margin-left: auto;
+    /* margin-left: 788px; */
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 420px;
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* border-radius: 50px; */
+    height: 100vh;
+    /* margin: auto; */
+}
+
+.login-page h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    color: salmon;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    /* padding: 0 20px; */
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-page remember-me{
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-between;
+    margin: -15px 0px 15px;
+}
+
+.login-page .remember-me label{
+    color: #fff;
+    font-size: 16px;
+}
+.remember-me input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-me a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.remember-me a:hover{
+    color: #3e2b2b;
+    text-decoration: underline;
+}
+
+.login-page button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    /* color: #fff; */
+    /* background-color: #3e2b2b; */
+    padding: 10px 20px 10px 20px;
+    /* color: #fff;
+    background-color: #3e2b2b; */
+    cursor: pointer;;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .register-button{
+    align-items: center;
+   font-size: 16px;
+}

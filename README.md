@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Smart-Bengal-Hackathon-Farm-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Put all the model files in the backend folder, Aishik will link the backend with the frontend.
+Do all the frontend stuff in the respective folder.
+
 
 ## Available Scripts
 
