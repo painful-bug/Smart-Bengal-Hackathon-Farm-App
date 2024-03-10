@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background: url("./frontend/assets/background.jpg") no-repeat; */
 }
 
 body {
@@ -14,10 +15,17 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("./frontend/assets/background.jpg") no-repeat;
-  /* background-position: center;
+  background: url("./frontend/assets/bg-farm-medium.jpg") no-repeat;
+  /* height: 50%;
+  width: 50%; */
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
+  /* background: transparent; */
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  /* border-radius: 50px; */
+  backdrop-filter: blur(4px);
+  box-shadow: 10px rgba(16, 16, 92, 0.5);
 }
 
 

@@ -3,6 +3,10 @@
   
 }
 
+body {
+  /* background: url("./frontend/assets/background.jpg") no-repeat; */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
