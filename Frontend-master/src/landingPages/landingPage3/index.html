@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- add icon link -->
+    <link rel="shortcut icon" href="../../../designs/logo-designs/cropAi-logo-favicon.png" type="image/x-icon">
+    <title>Landing Page-3</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <!-- Custom StyleSheeet -->
+    <link rel="stylesheet" href="../../assets/landing-3.css">
+   
+</head>
+
+<body>
+
+  <!-- Logo  -->
+   
+  <!-- <div class="logo-box">
+    <a href="/">
+      <img src="../../../designs/logo-designs//cropAi-logo-croped.png" class="logo">
+    </a>
+  </div> -->
+    <nav id="navbar" class="navbar">
+    
+    <div class="logo-box">
+      <a href="/">
+        <img src="../../../designs/logo-designs//cropAi-logo-croped.png" class="logo">
+      </a>
+    </div>
+
+    <ul class="navbar-items">
+        <li class="navbar-item">
+          <a href="/" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="/?q=analyze" class="navbar-link">Analyze crop</a>
+        </li>
+        <li class="navbar-item">
+          <a href="/src/contributors/" class="navbar-link">Team</a>
+        </li>
+    </ul>
+  </nav>
+
+ 
+
+  <!-- Main section -->
+  <section  class="main-section">
+   
+      <div class="image-section">
+        <img class="tree-img" src="../../../designs/Web Designs/design-3/Resources/tree.png"  alt="Image of a Tree">
+      </div>
+      
+      <div class="content-section">
+        <h1 class="text-center main-text">CROP AI</h1>
+        <p class="text-center text-ab" >
+          The Crop Advisory App for Farmers and gardeners.
+        </p>
+     
+        <button class="button" onclick="goToAnalyzePage()">
+            START ANALYSING &RightArrow;
+        </button>
+      </div>
+  </section>
+
+  
+  <!-- Decoration Glass -->
+  <img class="glass-img" src="../../../designs/Web Designs/design-3/Resources/glass.png" alt="Magnifying glass">
+ 
+
+  <!--  Script for the Page -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+
+  <script>
+    const goToAnalyzePage=()=>{
+      window.location.href="/?q=analyze"
+    }
+  </script>
+
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.backgroundColor = "#ffffffce";
+        document.getElementById("navbar").style.padding = "15px 10px";
+       
+      } 
+      else {
+        document.getElementById("navbar").style.backgroundColor = "#ffffff";
+         document.getElementById("navbar").style.padding = "28px 10px";
+        
+      }
+    }
+  </script>
+</body>
+
+
+</html>

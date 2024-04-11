@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add icon link -->
+    <link rel="shortcut icon" href="../../../designs/logo-designs/cropAi-logo-favicon.png" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/landing-2.css">
+    <title>Landing Page-2</title>
+   
+  </head>
+
+<body>
+   
+    <div class="logo-box">
+      <a href="/">
+        <img src="../../../designs/logo-designs/cropAi-logo-croped.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <nav id="navbar" class="navbar">
+      
+      <ul class="navbar-items">
+        <li class="navbar-item">
+          <a  href="/">HOME</a>
+        </li>
+        <li class="navbar-item">
+          <a href="/?q=analyze">ANALYZE CROP</a>
+        </li>
+        <li class="navbar-item">
+          <a href="/src/contributors">TEAM</a>
+        </li>
+      </ul>
+    
+    </nav>
+
+    <header class="landing-page" id="landing-page">
+            
+        <div class="hero-box" >
+                <div class="hero-content">
+                    <h1 class="title">CROP AI</h1>
+                    <p class="tagline"> A crop advisory app for farmers and gardeners</p>
+                    <button class="button" onclick="takeToAnalyze()">Analyze</button>
+                </div>
+               <div class="hero-images">
+                  <img class="design-one" src="../../../designs/Web Designs//design-2/All Pictures/used in landing page.jpg" alt="Cover Image">
+                </div>
+               
+          </div>
+   </header>
+    
+
+    <!-- Latest compiled and minified JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </script>
+
+    <script>
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+          
+          document.getElementById("navbar").style.backgroundColor = "#f7f7f7d5";
+          document.getElementById("navbar").style.padding = "20px 10px";
+          // document.getElementById("landing-page").style.paddingTop = "10rem";
+          
+
+        } else {
+          
+          document.getElementById("navbar").style.backgroundColor = "#ffffff";
+          document.getElementById("navbar").style.padding = "26px 10px";
+          // document.getElementById("landing-page").style.paddingTop = "4rem";
+
+        }
+      }
+    </script>
+
+    <script>
+      function takeToAnalyze(){
+        window.location.href='/?q=analyze';
+      }
+    </script>
+
+</body>
+
+</html>
+

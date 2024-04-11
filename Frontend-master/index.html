@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title id="title">Crop AI</title>
+
+  <!-- SEO Tags will go here -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="keywords"
+    content="Tech Event, Coding Competition, Open Source Competitions, Introduction to Open Source, Open Source for beginners, Girl Script Summer of Code, Girl Script Open Source Projects, Introduction to Programming, Introduction to Machine Learning ,Introduction to Deep Learning,Introduction to Front End Development, Learn Machine Learning, Learn Deep Learning, Learn FrontEnd Development,Machine Learning, Deep Learning, Front End Development, Plant Disease Detction App, How to detect plant disease, Solutions to plant diseases">
+
+  <meta name="description"
+    content="This is a crop advisory app for farmers and gardeners. It can diagnose pest damage, plant disease and nutrient deficiencies that are affecting crops and can offer corresponding treatment measures.">
+  
+  <meta name="application-name" content="Crop Analyser Application | FrontEnd ">
+  <meta name="author" content="Crop AI Organisation">
+  
+  
+  <meta name="robots" content="index,follow">
+  <meta name="Googlebot" content="index,follow">
+  <meta name="AdsBot-Google" content="index,follow" />
+  
+  <meta name="designer" content="Crop Analyser Application | FrontEnd ">
+  <meta name="copyright" content="Crop Analyser Application | FrontEnd ">
+
+  <meta name="abstract" content="This is a crop advisory app for farmers and gardeners. It can diagnose pest damage, plant disease and nutrient deficiencies that are affecting crops and can offer corresponding treatment measures.">
+  
+  <meta name="topic" content="Crop Analyser Application | FrontEnd ">
+  
+  <meta name="summary" content="This is a crop advisory app for farmers and gardeners. It can diagnose pest damage, plant disease and nutrient deficiencies that are affecting crops and can offer corresponding treatment measures.">
+
+  <meta name="msapplication-tooltip"
+      content="This is a crop advisory app for farmers and gardeners. It can diagnose pest damage, plant disease and nutrient deficiencies that are affecting crops and can offer corresponding treatment measures.">
+    
+  <meta name="apple-mobile-web-app-title" content="Crop Analyser Application | FrontEnd ">
+
+
+  <meta name="og:site_name" content="Crop Analyser Application | FrontEnd ">
+  <meta name="og:title" content="Crop Analyser Application | FrontEnd ">
+  <meta name="og:url" content="https://cropai.netlify.app/">
+  <meta name="og:image" content="./designs/logo-designs/cropAi-logo-favicon.png">
+  
+
+  <link rel="index" title="Crop Analyser Application | FrontEnd" href="https://cropai.netlify.app/"/>
+  
+  <link rel="start" title="Crop Analyser Application | FrontEnd" href="https://cropai.netlify.app/"/>
+  
+  <link rel="prev" title="Crop Analyser Application | FrontEnd"
+    href="https://cropai.netlify.app/" />
+
+  <link rel="next" title="Crop Analyser Application | FrontEnd" href="https://cropai.netlify.app/?q=analyze"/>
+  
+  <link rel="search" href="https://cropai.netlify.app/" type="application/opensearchdescription+xml" title="Crop Analyser Application | FrontEnd" />
+  
+  
+  <!-- add icon link -->
+  <link rel="shortcut icon" href="./designs/logo-designs/cropAi-logo-favicon.png" type="image/x-icon">
+  <!-- CDN's for usage -->
+
+  <!-- Latest Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+
+  <link rel="stylesheet" href="./src/assets/index.css">
+</head>
+
+<body>
+
+  <!-- Decoration Leaf on the right -->
+  <div class="leaf leaf-1">
+    <img src="./src/img/plant.png" alt="bg-design">
+  </div>
+
+  <div class="leaf leaf-2">
+    <img src="./src/img/plant.png" alt="bg-design">
+  </div>
+
+
+  <!-- Organisation logo -->
+  <div class="logo-box">
+    <a href="/" id="logo-url">
+      <img src="./designs/logo-designs/cropAi-logo-croped.png" alt="CropAi Logo" class="logo">
+    </a>
+  </div>
+
+  <!-- Landing Container  -->
+  <div id="landing_container" class="hidden">
+    <div class="container">
+      <h1 class="display-1">CROP AI</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-sm-6 text-center text-sm-right text-md-right">
+          <button class="btn btn-green btn-margin" onclick="showAbout()">About</button>
+        </div>
+        <div class="col-xs-12 col-md-6 col-sm-6 text-center text-sm-left text-md-left">
+          <button class="btn btn-green" onclick="analyze_click()">ANALYZE</button>
+        </div>
+      </div>
+      <div id="abt-data-cont" class="fade_effect">
+        <p id="about_content" class="mt-1 mx-auto">
+            This is a crop advisory app for farmers and gardeners. It can diagnose pest damage, plant disease and nutrient
+            deficiencies that are affecting crops and can offer corresponding treatment measures.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INPUT CONTAINER -->
+
+  <div id="input_container" class="hidden">
+    <h3 class="display-3">Upload Crop Image</h3>
+
+      <div class="img-container mx-auto mb-2">
+        <img src="./src/img/dummy-image.svg"  class="img-uploaded img-fluid" id="showImage" alt="image">
+      </div>
+	  <div class="chip">
+		<div id="img-lab" class ="img-lab"><span id="label-text"></span>
+		</div>
+		<div class="mytooltip">
+			<span id="tooltip-text"></span></div>
+	  </div>
+      <div id="file-select-content">
+        <div class="file-select mx-auto p-2">
+          <form class="upload-form" onchange="showImage(event)" onsubmit="validateAndDisplay()">
+            <div class="upload-btn-wrapper mx-auto">
+            <div id="image-error" class="alert alert-danger image-error">* Upload an Image </div>
+            <div class="" id="form-input">
+               
+              
+              <button type="button" class="btn btn-blue btn-sm">
+                <span id="uploadButtonText">Upload Image </span>
+                <input type="file" id="leaf_input" name="leaf_input" accept="image/x-png,image/gif,image/jpeg">
+             </button>
+
+              
+              </div>
+            </div>  
+            <div id="submit-btn">
+              <button class="btn btn-green btn-submit" type="submit" >Submit</button>
+            </div>
+            <div class="hidden"  id="loading-btn">
+              <button class="btn btn-green btn-submit" type="button" disabled>
+                <span class="spinner-border" role="status" aria-hidden="true"></span>
+                <cite id="countdown"></cite>
+                
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+
+  <!-- RESULT CONTAINER -->
+<div id="result_container" class="hidden">
+    <h4 class="display-4">Analysis Report</h4>
+    <div class="container result">
+        <div class="img-result-container img-fluid">
+          <img src="/0" class="crop_img card-img" id="leaf_image" alt="leafimage" >
+        </div>
+
+        <div class="card-body">
+          <p class="card-title">Disease: <span class="card-title" id="disease"></span></p>
+          <p class="card-text">
+            <div id="card-content">
+              <p class="list_content">Symptoms</p>
+              <ol class="information" id="symptoms"></ol>
+              <p class="list_content">Treatment </p>
+              <ol class="information" id="treatment"></ol>
+              <p class="list_content">Recommended Products</p>
+              <ol class="information" id="products"></ol>
+            </div>
+          
+        </div>
+    </div>
+    <div class="container">
+      <div class="pb-4 text-center">
+         <button class="btn btn-green btn-sm" onclick="analyze_click()">Analyze Other Crop</button>
+      </div>
+    </div>
+</div>
+
+
+  <!-- Bottom Decoration plant -->
+  <div class="grass">
+    <img src="./src/img/bottom-plants.png" alt="bg-design" style="width:80%;">
+  </div>
+  <!-- contributor part -->
+
+  <div id="bottom-data" class="hidden">
+    <div class="fixed-bottom d-inline col-12 px-0 col-md-8 mx-auto">
+      <div class="bottom-content text-center bg-light text-dark">
+        <p class="paragraph-content" id="para-cont-id">
+          This is an Open Source <a href="https://github.com/CropAi" target="_blank" rel="noopener">project</a>, created with <img src="./src/img/love.png" alt="Not found"> by <a href="./src/contributors" target="_blank" rel="noopener">Contributors</a>
+          under <a href="https://www.gssoc.tech/" target="_blank" rel="noopener">GirlScript Summer of Code 2020</a>, conducted by <a href="https://www.girlscript.tech/home" target="_blank" rel="noopener">GirlScript Foundation</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN's Scripts -->
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"  defer>
+  </script>
+
+  <!-- Custom Scripts -->
+  <script src="./src/assets/index.js"></script>
+</body>
+
+
+
+</html>
