@@ -1,17 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        gray: {
+          "100": "#282121",
+          "200": "rgba(255, 255, 255, 0)",
+        },
+        black: "#000",
+        gainsboro: "#d9d9d9",
+        olive: "#8d8824",
+        white: "#fff",
+      },
+      spacing: {},
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        kadwa: "Kadwa",
       },
     },
+    fontSize: {
+      "16xl": "35px",
+      inherit: "inherit",
+    },
   },
-  plugins: [],
-}
-
+  corePlugins: {
+    preflight: false,
+  },
+};
