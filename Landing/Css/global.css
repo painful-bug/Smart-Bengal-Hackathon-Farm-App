@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-kadwa: Kadwa;
+
+  /* font sizes */
+  --font-size-24xl: 43px;
+  --font-size-7xl: 26px;
+  --font-size-15xl: 34px;
+  --font-size-75xl: 94px;
+  --font-size-9xl: 28px;
+  --font-size-28xl: 47px;
+  --font-size-16xl: 35px;
+
+  /* Colors */
+  --color-gray-100: #282121;
+  --color-olive: #8d8824;
+  --color-black: #000;
+  --color-gainsboro: #d9d9d9;
+
+  /* Gaps */
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-2xl: 21px;
+  --padding-57xl: 76px;
+  --padding-164xl: 183px;
+  --padding-13xl: 32px;
+  --padding-58xl: 77px;
+  --padding-30xl: 49px;
+  --padding-100xl: 119px;
+  --padding-4xl-5: 23.5px;
+  --padding-xl: 20px;
+  --padding-9xl: 28px;
+  --padding-12xl: 31px;
+  --padding-10xl: 29px;
+  --padding-19xl: 38px;
+  --padding-89xl: 108px;
+  --padding-8xl: 27px;
+  --padding-35xl: 54px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-xs: 12px;
+  --br-26xl: 45px;
+}
