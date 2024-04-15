@@ -1,24 +1,34 @@
-import FrameComponent from "../components/FrameComponent";
-import Frame from "../components/Frame";
+import Navbar from "../components/Navbar.js";
 import "../styles/LandingPage.css";
+import "../styles/Frame.css";
 
-const LandingPage = () => {
+export const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div className="wrapper-unsplashiqvfvh0ajag">
+      <div className="bg-img-div">
         <img
-          className="unsplashiqvfvh0ajag-icon"
+          className="bg-img"
           loading="lazy"
           alt=""
-          src="/unsplashiqvfvh0ajag@2x.png"
+          src="../assets/background.jpg"
         />
       </div>
-      <FrameComponent />
-      <main className="frame-wrapper">
-        <Frame />
-      </main>
+      <Navbar />
+      {/* <main className="frame-wrapper"> */}
+        {/* <section className="frame1"> */}
+          <div className="harvest-the-future-smart-farm-wrapper">
+            <h1 className="harvest-the-future">
+              Harvest the Future: Smart Farming Solutions
+            </h1>
+          </div>
+          <div className="predict-your-crop-wrapper">
+            <div className="predict-your-crop">
+              <a>Get Started</a>
+            </div>
+          </div>
+          <div className="frame-child" />
+        {/* </section> */}
+      {/* </main> */}
     </div>
   );
 };
-
-export default LandingPage;

@@ -23,13 +23,13 @@
   align-items: center;
   justify-content: center;
 }
-.frame-wrapper,
-.landing-page {
+/* .frame-wrapper, */
+/* .landing-page {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-}
+} */
 .frame-wrapper {
   width: 1624px;
   flex-direction: row;

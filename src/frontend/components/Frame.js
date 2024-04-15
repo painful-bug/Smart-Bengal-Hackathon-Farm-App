@@ -9,7 +9,7 @@ const Frame = () => {
         </h1>
       </div>
       <div className="predict-your-crop-wrapper">
-        <div className="predict-your-crop">Get Started</div>
+        <div className="predict-your-crop"><a>Get Started</a></div>
       </div>
       <div className="frame-child" />
     </section>

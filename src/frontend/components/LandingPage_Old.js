@@ -1,7 +1,7 @@
 // import { Button } from "antd";
 import { Button } from "antd";
 
-export const LandingPage = () => {
+export const LandingPage_Old = () => {
   return (
     <div className="w-full relative bg-gray-200 h-[1080px] text-left text-[94px] text-black font-kadwa">
       <div className="absolute top-[0px] left-[0px] bg-gainsboro w-[1920px] h-[135px] mix-blend-saturation" />

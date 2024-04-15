@@ -1,6 +1,6 @@
-import "../styles/FrameComponent.css";
+import "../styles/Navbar.css";
 
-const FrameComponent = () => {
+export const FrameComponent = () => {
   return (
     <header className="monitor-parent">
       <div className="monitor" />

@@ -27,6 +27,10 @@
     mix-blend-mode: normal;
     white-space: nowrap;
   }
+
+  .predict-your-crop a{
+    
+  }
   .predict-your-crop-wrapper {
     width: 541px;
     border-radius: var(--br-11xl) var(--br-xs) var(--br-26xl) var(--br-11xl);

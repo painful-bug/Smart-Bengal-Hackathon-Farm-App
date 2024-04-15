@@ -3,10 +3,11 @@ import "./App.css";
 import { LoginPage } from "./frontend/components/LoginPage";
 import { MainPage } from "./frontend/components/MainPage";
 import { LandingPage } from "./frontend/components/LandingPage";
+import  {LandingPage_Old} from "./frontend/components/LandingPage_Old";
 function App() {
   return (
     <div>
-      <LandingPage />
+      <LandingPage_Old />
     </div>
   );
 }
