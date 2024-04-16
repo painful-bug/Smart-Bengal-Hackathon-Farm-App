@@ -1,0 +1,148 @@
+
+.frame-1variant5 {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px 12px 45px 30px;
+    background-color: #c9bf1d;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+  }
+  .seeing-spots-on {
+    height: 90px;
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .seeing-spots-on-your-crops-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 4px 0 5px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .are-the-leaves {
+    align-self: stretch;
+    height: 94px;
+    position: relative;
+    font-size: 47px;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .frame-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .worry-not-click {
+    align-self: stretch;
+    height: 90px;
+    position: relative;
+    font-size: 45px;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .frame-1variant5-parent,
+  .frame-parent {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .frame-1variant5-parent {
+    /* flex: 1; */
+    width: 790px;
+    flex-direction: column;
+    padding: 30px 52px 222px;
+    gap: 99px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 50px;
+    color: #282121;
+    font-family: Kadwa;
+    /* float: left; */
+  }
+  .frame-parent {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 33px 51px 59px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 800px) {
+    .seeing-spots-on {
+      font-size: 40px;
+    }
+    .are-the-leaves {
+      font-size: 38px;
+    }
+    .worry-not-click {
+      font-size: 36px;
+    }
+    .frame-1variant5-parent {
+      gap: 49px;
+      padding-left: 26px;
+      padding-right: 26px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .frame-1variant5-parent {
+      padding-top: 20px;
+      padding-bottom: 144px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .seeing-spots-on {
+      font-size: 30px;
+    }
+    .are-the-leaves {
+      font-size: 28px;
+    }
+    .worry-not-click {
+      font-size: 27px;
+    }
+    .frame-1variant5-parent {
+      gap: 25px;
+    }
+    .frame-parent {
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

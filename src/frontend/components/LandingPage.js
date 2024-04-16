@@ -1,49 +1,126 @@
 // import { Button } from "antd";
 import { Button } from "antd";
-
+import "../styles/LandingPage.css";
 export const LandingPage = () => {
   return (
-    <div className="w-full relative bg-gray-200 h-[1080px] text-left text-[94px] text-black font-kadwa">
-      <div className="absolute top-[0px] left-[0px] bg-gainsboro w-[1920px] h-[135px] mix-blend-saturation" />
-      <img
-        className="absolute top-[0px] left-[0px] w-[1920px] h-[1080px] object-cover mix-blend-darken"
-        alt=""
-        src="/unsplashiqvfvh0ajag@2x.png"
-      />
-      <div className="absolute top-[141px] left-[43px] w-[1538px] h-[806px] overflow-hidden">
-        <div className="absolute top-[184px] left-[0px] w-[1463px] h-[590px]">
-          <div className="absolute top-[-108px] left-[0px] inline-block w-[1463px] h-[459px]">
-            Harvest the Future: Smart Farming Solutions
-          </div>
-          <Button
-            className="absolute top-[306px] left-[0px]"
-            style={{ width: "541px" }}
-            type="default"
-          >
-            Predict Your Crop
-          </Button>
-        </div>
+    <div className="main">
+      <div className="header">
+        
       </div>
-      <div className="absolute top-[0px] left-[29px] w-[1863px] h-[104px] overflow-hidden text-center text-16xl">
-        <div className="absolute top-[38px] left-[0px] w-[1863px] h-[66px]" />
-        <div className="absolute top-[38px] left-[0px] inline-block w-[269px] h-[66px]">
-          brand name
+      <h1 className="harvest">Harvest the Future: Smart Farming Solutions</h1>
+
+      <section className="predict-your-crop-wrapper">
+        <a className="predict-your-crop" href="/predict/">
+          Get Started
+        </a>
+      </section>
+
+      <h1 className="service-offer"><a href="/services">We offer three services</a></h1>
+
+      <div className="info-cards">
+        {
+          //first info card
+        }
+
+        <div className="frame-root">
+          <div className="frame-1variant5-group">
+            <div className="frame-1variant51" />
+            <div className="frame-container">
+              <div className="seeing-spots-on-your-crops-container">
+                <div className="seeing-spots-on1">
+                  Seeing spots on your crops?
+                </div>
+              </div>
+              <div className="are-the-leaves1">
+                Are the leaves covered with a white furry substance?
+              </div>
+            </div>
+            <div className="worry-not-click1">
+              Worry not! Click a picture of the crop and we will tell which
+              disease has affected it!
+            </div>
+          </div>
+          <div className="line-wrapper">
+            {/* <img className="frame-item" loading="lazy" alt="" />  */}
+            <div className="line"></div>
+          </div>
+          <div className="instance-wrapper">
+            <div className="predict-your-crop-container">
+              <div className="predict-your-crop2"><a href="/detect">Detect Plant Disease</a></div>
+            </div>
+          </div>
         </div>
-        <div className="absolute top-[38px] left-[1112px] inline-block w-[269px] h-[66px]">
-          Home
+
+        {
+          //second info card
+        }
+
+        <div className="frame-root">
+          <div className="frame-1variant5-group">
+            <div className="frame-1variant51" />
+            <div className="frame-container">
+              <div className="seeing-spots-on-your-crops-container">
+                <div className="seeing-spots-on1">
+                  Confused about which crop to grow this season? Tell us the
+                  temperature and soil conditions and we will let you know which
+                  crop suits the best!
+                </div>
+              </div>
+              <div className="are-the-leaves1">
+                {/* Are the leaves covered with a white furry substance? */}
+              </div>
+            </div>
+            <div className="worry-not-click1">
+              {/* Worry not! Click a picture of the crop and we will tell which */}
+              {/* disease has affected it! */}
+            </div>
+          </div>
+          <div className="line-wrapper">
+            {/* <img className="frame-item" loading="lazy" alt="" />  */}
+            <div className="line"></div>
+          </div>
+          <div className="instance-wrapper">
+            <div className="predict-your-crop-container">
+              <div className="predict-your-crop2"><a href="/predict">Predict Your Crop</a></div>
+            </div>
+          </div>
         </div>
-        <div className="absolute top-[38px] left-[1486px] inline-block w-[269px] h-[66px]">
-          About us
-        </div>
-        <div className="absolute top-[38px] left-[1667px] inline-block w-[269px] h-[66px]">
-          Login
-        </div>
-        <div className="absolute top-[38px] left-[1297px] inline-block w-[269px] h-[66px]">
-          Predict
+
+        {
+          //third info card
+        }
+
+        <div className="frame-root">
+          <div className="frame-1variant5-group">
+            <div className="frame-1variant51" />
+            <div className="frame-container">
+              <div className="seeing-spots-on-your-crops-container">
+                <div className="seeing-spots-on1">
+                  Confused about which crop to grow this season? Tell us the
+                  temperature and soil conditions and we will let you know which
+                  crop suits the best!
+                </div>
+              </div>
+              <div className="are-the-leaves1">
+                {/* Are the leaves covered with a white furry substance? */}
+              </div>
+            </div>
+            <div className="worry-not-click1">
+              {/* Worry not! Click a picture of the crop and we will tell which */}
+              {/* disease has affected it! */}
+            </div>
+          </div>
+          <div className="line-wrapper">
+            {/* <img className="frame-item" loading="lazy" alt="" />  */}
+            <div className="line"></div>
+          </div>
+          <div className="instance-wrapper">
+            <div className="predict-your-crop-container">
+              <div className="predict-your-crop2">Predict Your Crop</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-

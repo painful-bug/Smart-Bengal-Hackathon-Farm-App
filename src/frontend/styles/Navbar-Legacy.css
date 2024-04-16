@@ -1,0 +1,33 @@
+/* Navbar.css */
+
+.App-nav {
+    background-color: #2196F3; /* Adjust background color as desired */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space out elements horizontally */
+    align-items: center; /* Align vertically */
+    padding: 1rem 2rem; /* Add some padding */
+  }
+  
+
+  .App-nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+  }
+  
+  .App-nav li {
+    margin-right: 1rem; /* Add some margin between list items */
+  }
+  
+  .App-nav a {
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Set font weight for links */
+  }
+  
+  .App-nav a:hover {
+    color: #f1f1f1; /* Change link color on hover */
+  }
+  
