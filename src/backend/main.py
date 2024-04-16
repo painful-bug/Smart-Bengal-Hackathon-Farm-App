@@ -6,6 +6,7 @@ import numpy as np
 import pickle
 import sklearn
 import warnings
+
 warnings.filterwarnings('ignore')
 
 model = pickle.load(open('./models/NBClassifier.pkl', 'rb'))
@@ -34,4 +35,7 @@ async def get_prediction(q: str | None = None):
     prediction = model.predict(data)
     return prediction[0]
 
+# @app.post("/detect")
+# async def get_detection(q:  | None = None):
+#     return "Successfully Uploaded"
 uvicorn.run(app=app, port=8000)
